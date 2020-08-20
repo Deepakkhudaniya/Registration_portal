@@ -1,0 +1,42 @@
+﻿@model Registration_Portal.Models.school
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>school</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.school_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.school_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xth_marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xth_marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.XIIth_marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XIIth_marks)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.school_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
